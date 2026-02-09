@@ -64,6 +64,6 @@ This project was a significant milestone in learning software collaboration and 
 > **Note**: The video showcases 4 synchronized screen recordings from different computers, demonstrating the real-time multiplayer networking capability.
 
 ---
-*Created by [Your Name/Team Name] - 2021*
+*Created by Trista - 2021*
 
 
