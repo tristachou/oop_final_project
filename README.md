@@ -15,7 +15,7 @@ However, the path isn't easy. In valid "party game" fashion, players can place t
 
 ## Features
 
-- **Multiplayer Networking**: Supports 4-player real-time gameplay using a Client-Server architecture (TCP Sockets via QtNetwork).
+- **Multiplayer Networking**: Supports 4-player real-time gameplay on the same Local Network (LAN/Wi-Fi) using a Client-Server architecture.
 - **Dynamic Level Building**: Players modify the level in real-time by placing obstacles and traps.
 - **Object-Oriented Design**: Utilizes C++ OOP principles (Encapsulation, Inheritance, Polymorphism) to manage game entities like `Role` (Player) and `Trap`.
 - **Custom Physics Engine**: Implements basic physics for movement, jumping, friction, and collision detection.
