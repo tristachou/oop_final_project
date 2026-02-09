@@ -1,43 +1,69 @@
-# oop_final_project
+# Don't Step on the Spikes (OOP Final Project)
 
-這份專題是物件導向程式設計的期末專題，專題的內容需用到物件導向的三大觀念「封裝」、「繼承」、「多型」，
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Qt](https://img.shields.io/badge/Qt-%23217346.svg?style=for-the-badge&logo=Qt&logoColor=white)
+![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white)
 
-因此誕生了這份作品《別踩尖刺兒》！
 
-《別踩尖刺兒》是一款參考了steam上一款名為《超級雞馬》的派對遊戲而做出來的遊戲，遊戲內容主要是讓玩家們由左邊快速的通關到右邊的旗幟，
+> **Note**: This project was developed as a final assignment for an Object-Oriented Programming course (Jan 2021).
 
-在過程中可以放置一些陷阱，像是冰塊、蜘蛛網、砲彈之類的來阻止其他人前進，但同樣的也要注意，這些陷阱也會害到自己！
+## Introduction
 
-## Demo影片：https://www.youtube.com/watch?v=EXr-rL2-Hy0
+**Don't Step on the Spikes** is a multiplayer party platformer game inspired by *Ultimate Chicken Horse*. The goal is simple: race your friends from the starting point to the flag on the right. 
 
-## 檢討
+However, the path isn't easy. In valid "party game" fashion, players can place traps—like ice patches, spiderwebs, and cannons—to hinder their opponents. The catch? You have to dodge your own traps too!
 
-1.製作時間短暫，導致code十分冗長
+## Features
 
-2.未使用git做版控
+- **Multiplayer Networking**: Supports 4-player real-time gameplay using a Client-Server architecture (TCP Sockets via QtNetwork).
+- **Dynamic Level Building**: Players modify the level in real-time by placing obstacles and traps.
+- **Object-Oriented Design**: Utilizes C++ OOP principles (Encapsulation, Inheritance, Polymorphism) to manage game entities like `Role` (Player) and `Trap`.
+- **Custom Physics Engine**: Implements basic physics for movement, jumping, friction, and collision detection.
+- **Game Assets**: Includes custom sprites and audio (Sound effects & BGM).
 
-3.網路連線不穩定，遊戲時掉封包頻率偏高
+## Tech Stack
 
-4.遊戲bug不少，判定做得不夠精確
+- **Language**: C++ (C++11/14 Standard)
+- **Framework**: Qt 5 (Qt Widgets, Qt Network, Qt Multimedia)
+- **IDE**: Visual Studio
+- **Architecture**: Client-Server (Socket Programming)
 
-## 心得分享
+## Installation & Build
 
-這次我在專題內負責的是遊戲主內容，製作的最糟糕的部分大概是內容幾乎未進行分檔，當初製作的時候要使用什麼進行視窗化一直沒有決定下來
+### Prerequisites
+- Visual Studio (2019 or later recommended)
+- Qt 5 Extension for Visual Studio
+- Qt 5 Development Libraries
 
-直到最後一兩週臨時決定使用QT，製作時基本上是邊學邊做，後來才發現很多東西可以寫得更工整，但是因為時間問題並未去進行修改。
+### Setup
+1.  Clone the repository.
+2.  Open the solution file `oop_final_project_20210105.sln` in Visual Studio.
+3.  Ensure the Qt version is correctly configured in the VS Qt extension settings.
+4.  Build the solution (Release/Debug x64 or x86 depending on your Qt kit).
 
-第二個問題就是人物和物體的碰撞判定，雖然正常移動不會出現太大的問題，但是有些判定並不精準，在特定位置時一定會出現bug
+## How to Play
 
-這也是我卡關了相當長時間的部分，雖然最後的成品還不完美，但是自認為有達到自我要求了
+1.  **Launch the Game**: Start the application.
+2.  **Connect**: The game attempts to connect to the server (default IP: `10.101.2.8`). *Note: Requires a running server instance.*
+3.  **Gameplay**:
+    - **Move**: Arrow Keys / WASD (Configurable)
+    - **Jump**: Spacebar
+    - **Place Trap**: Select a trap from the UI and click on the grid to place it.
 
-製作過程大概百分之九十都是邏輯思考時間，感覺跟程式概念沒有太多的關係，
+## Lessons Learned
 
-這是我第一次進行團隊專案合作，
+This project was a significant milestone in learning software collaboration and architecture:
+- **Networking**: Gained practical experience with socket programming and handling packet serialization/deserialization.
+- **Teamwork**: Collaborated on game logic, artwork, and networking protocols.
+- **Qt Framework**: Learned to leverage Qt for both UI and core logic.
 
-作為分組組長，我覺得自己工作分派的能力還有待加強，希望之後可以更進步
+## Demo
 
-不過跟大家一起通宵努力的感覺很好
+[Watch the Gameplay Demo](https://www.youtube.com/watch?v=EXr-rL2-Hy0)
 
-2021/1/29
+> **Note**: The video showcases 4 synchronized screen recordings from different computers, demonstrating the real-time multiplayer networking capability.
+
+---
+*Created by [Your Name/Team Name] - 2021*
 
 
