@@ -7,7 +7,10 @@
 
 > **Note**: This project was developed as a final assignment for an Object-Oriented Programming course (Jan 2021).
 
+<img width="660" height="358" alt="Screenshot 2026-02-10 013224" src="https://github.com/user-attachments/assets/1e0c941c-b918-43d2-bdeb-3c19f3d67e0a" />
+
 ## Introduction
+
 
 **Don't Step on the Spikes** is a multiplayer party platformer game inspired by *Ultimate Chicken Horse*. The goal is simple: race your friends from the starting point to the flag on the right. 
 
